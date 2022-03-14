@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* width */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #747981;
+  background: #4b79a1; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #283e51,
+    #4b79a1
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content {
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 20px auto;
+  max-width: 640px;
+  max-height: 600px;
+  background-color: white;
+}
+
+.centering {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+.date-info {
+  margin-bottom: 30px;
+}
+
+.date-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.date {
+  font-size: 50px;
+  font-weight: 500;
+}
+.month {
+  font-weight: 600;
+}
+.day {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.list {
+  box-sizing: border-box;
+  margin: 0 50px;
+  padding: 20px 0;
+  /* background-color: aliceblue; */
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+.done {
+  color: #cfd0d5;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: -35px;
+}
+/* font awesome icon */
+.fa-solid {
+  color: #51e3a4;
+}
+.fa-circle {
+  font-size: 20px;
+}
+.fa-circle-check {
+  font-size: 22px;
+}
+.fa-circle-plus {
+  font-size: 70px;
+  background-color: #4aa47b;
+  border-radius: 50%;
+}
+.fa-regular {
+  color: #cfd0d5;
+}

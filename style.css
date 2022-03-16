@@ -21,8 +21,8 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .content {
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 500px;
+  /* max-height: 400px; */
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: visible;
@@ -64,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .list {
@@ -86,6 +87,16 @@ body {
   margin-top: 20px;
   margin-bottom: -35px;
 }
+#plus-button {
+  transition: 0.4s;
+}
+#plus-button:hover {
+  /* opacity: 0.8; */
+  color: #47ce94;
+}
+#plus-button:active {
+  opacity: 0.6;
+}
 /* font awesome icon */
 .fa-solid {
   color: #51e3a4;
@@ -103,4 +114,8 @@ body {
 }
 .fa-regular {
   color: #cfd0d5;
+  transition: 0.4s;
+}
+.fa-regular:hover {
+  color: #51e3a4;
 }

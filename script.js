@@ -20,6 +20,51 @@
 // });
 
 // reserved for date
+const weekday = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+];
+
+const month = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+const d = new Date();
+
+// date
+let getDate = d.getUTCDate();
+const dateNow = document.querySelector('.date');
+dateNow.innerHTML = getDate;
+
+// day
+let getDay = d.getUTCDay();
+const dayNow = document.querySelector('.day');
+dayNow.innerHTML = weekday[getDay];
+
+// Month
+let getMonth = d.getUTCMonth();
+const monthNow = document.querySelector('.month');
+monthNow.innerHTML = month[getMonth];
+
+// Years
+let getYear = d.getUTCFullYear();
+const yearNow = document.querySelector('.year');
+yearNow.innerHTML = getYear;
 // -----------------
 
 const content = document.querySelector('.content');
